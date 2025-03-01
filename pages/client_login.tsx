@@ -99,6 +99,9 @@ const scopes = [
 
   // https://dev.twitch.tv/docs/api/reference/#get-user-emotes
   "user:read:emotes", // for fetching emotes that a user can use via helix (not currently used)
+
+  // https://dev.twitch.tv/docs/eventsub/eventsub-subscription-types/#channelsuspicious_userupdate
+  "moderator:read:suspicious_users", // for viewing suspicious user updates via eventsub
 ];
 
 export default function ClientLogin() {
